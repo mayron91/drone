@@ -1,94 +1,191 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <div class="header_nav_wrapper">
-            <div class="header_nav_top">
-                <div class="header_nav_logo"><a href=""><img src="img/logo.webp" alt=""></a></div>
-                <div class="header_nav_menu">
-                    <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">FPV</a></li>
-                        <li><a href="">DJI</a></li>
-                        <li><a href="">Accessory</a></li>
-                        <li><a href="">Service</a></li>
-                        <li><a href="">Contact us</a></li>
-                    </ul>
-                </div>
-                <div class="header_nav_mob_menu">
-                    <div class="hamburger-menu">
-                        <input id="menu__toggle" type="checkbox" />
-                        <label class="menu__btn" for="menu__toggle">
-                          <span></span>
-                        </label>
-                    
-                        <ul class="menu__box">
-                          <li><a class="menu__item" href="#">Home</a></li>
-                                <li><a class="menu__item" href="#">FPV</a></li>
-                                <li><a class="menu__item" href="#">DJI</a></li>
-                                <li><a class="menu__item" href="#">Accessory</a></li>
-                                <li><a class="menu__item" href="#">Service</a></li>
-                                <li><a class="menu__item" href="#">Contact us</a></li>
-                        </ul>
-                      </div>
-                </div>
-            </div>
+  <header>
+    <div class="header_nav_wrapper">
+      <div class="header_nav_top">
+        <div class="header_nav_logo"><a href=""><img src="img/logo.webp" alt=""></a></div>
+        <div class="header_nav_menu">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">FPV</a></li>
+            <li><a href="">DJI</a></li>
+            <li><a href="">Accessory</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Contact us</a></li>
+          </ul>
         </div>
-    </header>
-    <section>
-        <div class="wrapper">
-            <header>
-              <h1>Product Image Gallery with Thumbnails</h1>
-              <p>Click on the thumbnail to view it larger on the right!</p>
-            </header>
-            
-            <div class="image-gallery">
-              <aside class="thumbnails">
-                <a href="#" class="selected thumbnail" data-big="http://placekitten.com/420/600">
-                  <div class="thumbnail-image" style="background-image: url(http://placekitten.com/420/600)"></div>
-                </a>
-                <a href="#" class="thumbnail" data-big="http://placekitten.com/450/600">
-                  <div class="thumbnail-image" style="background-image: url(http://placekitten.com/450/600)"></div>
-                </a>
-                <a href="#" class="thumbnail" data-big="http://placekitten.com/460/700">
-                  <div class="thumbnail-image" style="background-image: url(http://placekitten.com/460/700)"></div>
-                </a>
-              </aside>
-            
-              <main class="primary" style="background-image: url('http://placekitten.com/420/600');"></main>
-            </div>
-            
-            </div>
-    </section>
-    <footer>
-        <div class="footer_wrapper">
-            <div class="copyright"> Copyright © 2024 Beast Technology Co., Ltd. All rights reserved. </div>
+        <div class="header_nav_mob_menu">
+          <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+
+            <ul class="menu__box">
+              <li><a class="menu__item" href="#">Home</a></li>
+              <li><a class="menu__item" href="#">FPV</a></li>
+              <li><a class="menu__item" href="#">DJI</a></li>
+              <li><a class="menu__item" href="#">Accessory</a></li>
+              <li><a class="menu__item" href="#">Service</a></li>
+              <li><a class="menu__item" href="#">Contact us</a></li>
+            </ul>
+          </div>
         </div>
-    </footer>
-    <script>
-        $('.thumbnail').on('click', function() {
-  var clicked = $(this);
-  var newSelection = clicked.data('big');
-  var $img = $('.primary').css("background-image","url(" + newSelection + ")");
-  clicked.parent().find('.thumbnail').removeClass('selected');
-  clicked.addClass('selected');
-  $('.primary').empty().append($img.hide().fadeIn('slow'));
-});
-    </script>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="container">
+      <div class="bread_cr">
+        <h1>Accessory</h1>
+        <span>/</span>
+        <span class="prod_title">BEASTFPV 4.9-5.8GHz 64CH 2.5W VTX</span>
+      </div>
+      <div class="gallery_wr">
+        <div class="wrapper gallery_left">
+
+          <div class="image-gallery">
+            <aside class="thumbnails">
+              <a href="#" class="selected thumbnail" data-big="img/gallery1.webp">
+                <div class="thumbnail-image" style="background-image: url(img/gallery1.webp)"></div>
+              </a>
+              <a href="#" class="thumbnail" data-big="img/gallery2.webp">
+                <div class="thumbnail-image" style="background-image: url(img/gallery2.webp)"></div>
+              </a>
+              <a href="#" class="thumbnail" data-big="img/gallery3.webp">
+                <div class="thumbnail-image" style="background-image: url(img/gallery3.webp)"></div>
+              </a>
+              <a href="#" class="thumbnail" data-big="img/gallery4.webp">
+                <div class="thumbnail-image" style="background-image: url(img/gallery4.webp)"></div>
+              </a>
+            </aside>
+
+            <main class="primary" style="background-image: url('img/gallery1.webp');"></main>
+          </div>
+
+        </div>
+        <div class="gallery_right">
+          <h2 class="gallery_right_title">BEASTFPV 4.9-5.8GHz 64CH 2.5W VTX</h2>
+          <div class="gallery_right_info">BEASTFPV image transmitter supports 4.9G to 5.8G frequency band, supports up
+            to 64CH. It has a maximum power of 2.5W, which can effectively cope with various usage scenarios.</div>
+          <div class="gallery_right_atr_wr">
+            <span>Operating Voltage:</span>
+            <span class="atr">7-36V</span>
+            <span>Output Power:</span>
+            <span class="atr">PIT/25mW/400mW/800mW/1500mW/2500mW</span>
+            <span>Frequency Range:</span>
+            <span class="atr">4.9GHz – 5.8GHz</span>
+            <span>Number of frequency points:</span>
+            <span class="atr">64CH</span>
+            <span>Antenna interface:</span>
+            <span class="atr">MMCX</span>
+            <span>Video format:</span>
+            <span class="atr">NTSC / PAL</span>
+          </div>
+        </div>
+      </div>
+      <div class="overview">
+        <ul class="overview_nav">
+          <li><a href="">Overview</a></li>
+          <li><a href="">Specs</a></li>
+        </ul>
+        <div class="overview_content">
+          <img src="img/content.webp" alt="">
+          <img src="img/content2.webp" alt="">
+          <img src="img/content3.webp" alt="">
+        </div>
+        <h3>Specs</h3>
+        <div class="overview_specs_atr">
+          <span>Operating Voltage</span>
+          <span class="specs_atr">7-36V</span>
+        </div>
+        <div class="overview_specs_atr">
+          <span>Working current</span>
+          <span class="specs_atr">≤450mA@12V, 800mW
+            ≤850mA@12V, 2500mW</span>
+        </div>
+        <div class="overview_specs_atr">
+          <span>RF Output Power</span>
+          <span class="specs_atr">PIT/25mW/400mW/800mW/1500mW/2500mW</span>
+        </div>
+        <div class="overview_specs_atr">
+          <span>Frequency Range</span>
+          <span class="specs_atr">4.9GHz – 5.8GHz</span>
+        </div>
+        <div class="overview_specs_atr">
+          <span>Number of frequency points</span>
+          <span class="specs_atr">64CH</span>
+        </div>
+        <div class="overview_specs_atr">
+          <span>Antenna interface</span>
+          <span class="specs_atr">MMCX</span>
+        </div>
+        <div class="overview_specs_atr">
+          <span>Video format</span>
+          <span class="specs_atr">NTSC / PAL</span>
+        </div>
+        <h3>Manual</h3>
+        <div class="manual">
+          <img src="img/manual.webp" alt="">
+        <a class="get_manual" href="#" download>BEASTFPV_VTX_4G9_5G8.json</a>
+      </div>
+        <h2 class="rec_border">Recommend</h2>
+        <div class="products_cards_wrapper">
+          <a href="">
+            <div class="products_cards">
+              <div class="products_card_img"><img src="img/fpv1.webp" alt=""></div>
+              <div class="products_title">BEASTFPV F09 9inch FPV</div>
+            </div>
+          </a>
+          <a href="">
+            <div class="products_cards">
+              <div class="products_card_img"><img src="img/fpv1.webp" alt=""></div>
+              <div class="products_title">BEASTFPV F09 9inch FPV</div>
+            </div>
+          </a>
+          <a href="">
+            <div class="products_cards">
+              <div class="products_card_img"><img src="img/fpv1.webp" alt=""></div>
+              <div class="products_title">BEASTFPV F09 9inch FPV</div>
+            </div>
+          </a>
+          <a href="">
+            <div class="products_cards">
+              <div class="products_card_img"><img src="img/fpv1.webp" alt=""></div>
+              <div class="products_title">BEASTFPV F09 9inch FPV</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer_wrapper">
+      <div class="copyright"> Copyright © 2024 Beast Technology Co., Ltd. All rights reserved. </div>
+    </div>
+  </footer>
+  <script>
+    $('.thumbnail').on('click', function () {
+      var clicked = $(this);
+      var newSelection = clicked.data('big');
+      var $img = $('.primary').css("background-image", "url(" + newSelection + ")");
+      clicked.parent().find('.thumbnail').removeClass('selected');
+      clicked.addClass('selected');
+      $('.primary').empty().append($img.hide().fadeIn('slow'));
+    });
+  </script>
 </body>
 
 </html>
